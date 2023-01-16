@@ -21,11 +21,9 @@ function modifyString(string) {
       .map((item, index) => {
         return (`${index + 1}. sentence length is ${item.length}`);
       });
-    let text = stringArray.join(". ") + ".";
-    return text;
+    return text = stringArray.join(". ") + ".";
   }
   
   const string = "Hello world. Forth task is easy. Give me more.";
   console.log(modifyString(string));
 
-  

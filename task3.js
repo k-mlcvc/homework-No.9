@@ -27,8 +27,7 @@ function mapTokens(arr) {
       const translation = TRANSLATION[locale] || TRANSLATION.hr;
       return translation[item] || "ERROR: UNDEFINED TOKEN";
     });
-    let text = stringArray.join(" ");
-    return text;
+    return text = stringArray.join(" ");
   }
   
   const tokens = [
@@ -43,4 +42,3 @@ function mapTokens(arr) {
   
   console.log(mapTokens(tokens));
 
-  
